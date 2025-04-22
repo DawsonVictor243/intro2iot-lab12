@@ -60,10 +60,10 @@ bool isButtonActivated() {
   // Button is normally HIGH
   if (state == HIGH) {
     // Button not pressed
-    return true;
+    return false;
   } else {
     // Button pressed
-    return false;
+    return true;
   }
 
   // HINT: Serial.print should say "ON" or "OFF" too
