@@ -54,7 +54,7 @@ bool isRoomDark() {
 bool isButtonActivated() {
   state = digitalRead(buttonPin);
   
-  Serial.print("isButtonOn: ");
+  Serial.print("Button: ");
 
   // TODO: Fix this logic and print the correct status
   // Button is normally HIGH
