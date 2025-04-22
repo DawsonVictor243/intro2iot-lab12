@@ -10,6 +10,7 @@ int lightLevel;
 
 bool isDark = false;
 bool isButtonOn = false;
+bool state;
 
 void setup() {
   Serial.begin(9600);
@@ -51,9 +52,9 @@ bool isRoomDark() {
 // ===============================
 // Manual Switch Control – Student 2
 bool isButtonActivated() {
-  bool state = digitalRead(buttonPin);
+  state = digitalRead(buttonPin);
   
-  Serial.print("Button: ");
+  Serial.print("isButtonOn: ");
 
   // TODO: Fix this logic and print the correct status
   // Button is normally HIGH
